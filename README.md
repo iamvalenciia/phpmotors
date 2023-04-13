@@ -9,8 +9,9 @@
   * Deleting existing products
 
 # Admin account
-* admin@cit340.net
-* 4Y5tdp48^RtA
+User | Password 
+| :--- | ---: 
+admin@cit340.net  | 4Y5tdp48^RtA
 ![image](https://github.com/iamvalenciia/phpmotors/blob/master/uploads/images/batmanforreal.jpg?raw=true)
 
 ### Tecnologies
