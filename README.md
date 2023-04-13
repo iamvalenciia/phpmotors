@@ -10,7 +10,7 @@
 
 # Admin account
 User | Password 
-| :--- | ---: 
+| :---: | :---: 
 admin@cit340.net  | 4Y5tdp48^RtA
 
 ![image](https://github.com/iamvalenciia/phpmotors/blob/master/uploads/images/batmanforreal.jpg?raw=true)
