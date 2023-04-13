@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap");
+
+:root {
+  --soft-gray-color: #bababa;
+  --dark-gray-color: #8d8d8d;
+  --sky-color: #0d6ae4;
+  --custom-black-color: #3a3a3a;
+  --custom-white-color: #ffffff;
+  --hover-sky-color: #1877f2;
+
+  --font-josefin: "Josefin Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-josefin);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*HEADER*/
+#top-header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+#top-header:first-child {
+  display: grid;
+  grid-column: 1;
+}
+
+#logo {
+  width: 100%;
+}
+.account {
+  display: grid;
+  grid-column: 3;
+  align-items: center;
+  inline-size: max-content;
+  text-decoration: none;
+  color: var(--custom-black-color);
+  font-weight: bold;
+}
+
+/*NAV*/
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+  background-color: var(--custom-black-color);
+}
+
+nav ul li a {
+  color: var(--custom-white-color);
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: 0.625rem;
+}
+
+nav ul li {
+  padding: 0.5rem; /* Modify this in large view*/
+  text-align: center;
+  align-items: center;
+}
+
+nav ul li:hover {
+  color: var(--custom-black-color);
+  background-color: var(--sky-color);
+}
+
+/*FOOTER*/
+footer {
+  text-align: center;
+}
+
+/* MAIN */
+#hero_layout img {
+  width: 100%;
+}
+
+#button_large_view {
+  display: none;
+}
+
+#button_small_view {
+  display: grid;
+  align-items: center;
+  width: 35%;
+  margin: auto;
+  margin-top: 0.625rem;
+  padding: 0.938rem;
+  font-size: 1.2rem;
+  background-color: var(--sky-color);
+  color: var(--custom-white-color);
+  font-weight: bold;
+}
+
+#reviews_layout ul {
+  line-height: 2;
+}
+
+#large_view {
+  display: none;
+}
+
+#upgrades_layaout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.875rem;
+}
+
+#upgrades_layaout h2 {
+  display: grid;
+  grid-column: 1/3;
+  grid-row: 1;
+}
+
+#hub_caps img,
+#bumper_stickers img,
+#flame_decals img,
+#flux_capacitor img {
+  width: 50%;
+}
+
+#hub_caps div,
+#bumper_stickers div,
+#flame_decals div,
+#flux_capacitor div {
+  background-color: var(--sky-color);
+  padding: 0.625rem;
+}
+
+#hub_caps,
+#bumper_stickers,
+#flame_decals,
+#flux_capacitor {
+  display: grid;
+  align-content: center;
+  text-align: center;
+}
+
+/* LOGIN AND REGISTER FORM */
+#container_register_login_form {
+  display: grid;
+  grid-template-columns: auto; /*edit in large view*/
+  justify-items: center;
+  /* gap: 0.625rem; */
+  /* margin: 2em 2em; */
+  /* justify-content: center; */
+}
+
+.login_grid_image_car {
+  display: none; /*edit in large view*/
+  grid-column: 1;
+  grid-row: 1;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_grid_image_car img {
+  width: 100%;
+}
+
+.form_grid {
+  display: flex;
+  grid-column: 2; /*edit in large view*/
+  grid-row: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.25), 0 1px 3px rgba(0, 0, 0, 0.25);
+  background-color: var(--custom-white-color);
+  width: 70%;
+  max-width: 300px; /*edit in large view*/
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-label {
+  font-size: 1.2rem;
+  color: var(--dark-gray-color);
+}
+
+.form-input {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  margin: 0.7rem 0;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  border: 1px solid var(--dark-gray-color);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  box-shadow: 0 0 3px var(--sky-color);
+  border: 1px solid var(--sky-color);
+}
+
+.form-button {
+  background-color: var(--sky-color);
+  color: var(--custom-white-color);
+  padding: 0.7rem 0.7rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.form-button:hover {
+  background-color: var(--hover-sky-color);
+}
+
+.form-register-link {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#register_text_link {
+  color: var(--custom-black-color);
+}
+
+.form-register-link:hover {
+  text-decoration: underline;
+}
+
+.form-register-link a {
+  text-decoration: none;
+  color: var(--dark-gray-color);
+}
+
+/* REGISTER SHOW PASSWORD CHECKBOX */
+.show-password {
+  position: relative;
+  top: 1.875rem;
+  left: 1.875rem;
+  cursor: pointer;
+}
+
+.fa-eye {
+  font-size: 1.125rem;
+}
+
+/* REGISTER PASSWORD <span> TAG  */
+.text-help {
+  display: block;
+  background-color: #f2f2f2;
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #666;
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  max-width: max-content;
+}
+
+/* ADD VEHICLE FORM */
+#container_add_vehicle_main {
+  display: grid;
+  grid-template-columns: auto; /*edit in large view*/
+  gap: 0.625rem;
+  margin: 0;
+}
+
+.title-each-page {
+  display: grid;
+  text-align: center;
+}
+
+.alert-successfully-added {
+  background-color: #0352a1; /* a blue color */
+  border: 1px solid #228B22; /* a green color */
+  color: #FFFFFF; /* white text */
+  padding: 10px;
+  text-align: center;
+}
+
+.alert-failure {
+  background-color: #f8d7da;
+  border: 1px solid #842029;
+  color: #842029;
+  padding: 10px;
+  text-align: center;
+}
+
+#welcomeUser {
+  display: grid;
+  padding: 10px 30px;
+  grid-column: 2;
+  grid-row: 1;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  color: #333;
+  border-radius: 5px;
+  color: var(--sky-color);
+}
+
+.form-input-modify {
+  padding: 0.4rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  border: 1px solid var(--dark-gray-color);
+  color: var(--custom-black-color);
+}
+
+.form-label-modify {
+  font-size: 1.2rem;
+  color: var(--sky-color);
+}
+
+.form-button-modify {
+  background-color: var(--sky-color);
+  color: var(--custom-white-color);
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.form-button-modify:hover {
+  background-color: var(--hover-sky-color);
+}
+
+/* DISPLAY VEHICLES */
+
+.inv-display {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.inv-display li {
+  margin-bottom: 0.5em;
+  border: 1px #ccc solid;
+  list-style-type: none;
+  flex: 1 1 auto;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.25), 0 1px 3px rgba(0, 0, 0, 0.25);
+  background-color: var(--custom-white-color);
+}
+
+.inv-display li img {
+  max-width: 100%;
+}
+
+.inv-display span {
+  color: green;
+}
+
+/* VEHICLE INFO DISPLAY */
+#containterParent {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+#vehicleImage {
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.25), 0 1px 3px rgba(0, 0, 0, 0.25);
+  width: 500px;
+  height: 300px;
+  max-width: 100%;
+  height: auto;
+  grid-row: 1;
+}
+
+#thumbnailColumn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  grid-row: 2;
+  column-gap: 10px;
+}
+
+#thumbnailColumn li img {
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.25), 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+#containterVehicleInfo {
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.25), 0 1px 3px rgba(0, 0, 0, 0.25);
+  background-color: var(--custom-white-color);
+  padding: 10px;
+  grid-row: 3;
+}
+
+.blueText {
+  color: var(--custom-black-color);
+}
+
+/*REVIEW DISPLAY SECTION*/
+#containerReviewPost {
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.25), 0 1px 3px rgba(0, 0, 0, 0.25);
+  /* border: 1px solid var(--dark-gray-color); */
+  padding: 10px;
+  grid-row: 3;
+  text-align: center;
+}
+
+#reviewsContainer {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#reviewsContainer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#reviewsContainer li {
+  margin-bottom: 20px;
+  /* border: 1px solid #ccc; */
+}
+
+#reviewsContainer li p {
+  margin: 0;
+}
+
+#reviewsContainer li p:nth-child(2) {
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  padding: 1rem;
+  font-style: italic;
+}
+
+#h2customeReviews {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: black;
+  color:var(--custom-white-color) ;
+}
+/*USER INFORMATION ADMIN SECTION*/
+.h1name-admin-view{
+  margin: 0;
+}
+.pname-admin-view{
+  margin: 0 0 1rem 0;
+}
+.container-user-information{
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.25), 0 1px 3px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  margin-top: 2rem;
+}
+
+.container-manage-information{
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.25), 0 1px 3px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  margin-top: 2rem;
+}
+.container-manage-information p:nth-child(3){
+  margin-top: 2rem;
+}
+.style-link{
+  color: #0072c6;
+  text-decoration: none;
+}
+
+/*REVIEWs ADMIN SECTION*/
+.reviews-admin-view{
+  list-style-type: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+.reviews-admin-view li{
+  margin-top: 2rem;
+}
+.reviews-admin-view li p{
+  margin: 0 0 .5rem 0;
+}
+
+/*REVIEW REMOVE CONFIRMATION SECTION*/
+.style-review-remove-view{
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  padding: 1rem;
+  font-style: italic;
+}
+
